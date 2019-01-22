@@ -6,11 +6,12 @@ body{
   margin-bottom: auto;
   background-color: white;
   font-family: 'ABeeZee', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
 text-decoration: none;}
 
 a{
   text-decoration: none;
+  color: black;
 }
 html {
     height: 100%;
@@ -50,8 +51,9 @@ opacity: 0.85;
 
 #logo{
 
-  width: 190px;
-  height: 180px;
+  width: 160px;
+  height: 150px;
+  padding-bottom: 20px;
 }
 .links {
   display: table-row;
@@ -71,8 +73,8 @@ header a{
 
 .nav {
   background-color: #f6d9d5;
-  padding-bottom: 10px;
-  margin: 0 0 35px;
+  font-size: 16px;
+  margin: 0 0 0px;
   text-align: center;
   font-family: 'ABeeZee', sans-serif;
 }
@@ -161,19 +163,9 @@ float: left;
   margin-bottom: 10px;
   padding-right: 20px;
 }
-.three{
-  width: 100%;
-  padding-top: 15px;
-  padding-bottom: 20px;
-  transform: translateX(-200px);
-  display: inline-flex;
-  overflow-x: visible;
-}
+
 .neighborhood {
-  width: 400px;
-}
-.neighborhood img{
-  max-width: 400px;
+  max-width: 300px;
 	height: auto;
 
 }
@@ -183,8 +175,7 @@ float: left;
 }
 footer{
   font-family: 'ABeeZee', sans-serif;
-
-  position: fixed;
+  font-size: 15px;
   left: 0;
   bottom: 0;
 	font-family: 'Open Sans', sans-serif;
@@ -243,6 +234,11 @@ h2{
   display: block;
   margin: auto;
   text-align: center;
+  transition: transform .6s;
+  cursor: pointer;
+}
+h2:hover{
+  transform: scale(1.3);
 }
 .intro{
   font-size: 60px;
@@ -250,6 +246,12 @@ h2{
   padding-top: 50px;
   padding-bottom: 60px;
   text-align: center;
+  transition: transform .6s;
+  cursor: pointer;
+
+}
+.intro:hover{
+  transform:scale(1.3);
 }
 main{
   background-color: white;
@@ -335,10 +337,7 @@ content: "\2709";
 	section .content{
 		width: 90%;
 	}
-	aside .insta{
-		float: none;
-		width: 90%;
-	}
+
 }
 
 ul .dijkstras img{
@@ -452,5 +451,72 @@ section .contact{
   background-color: white;
   padding: 20px;
   font-size: 18px;
+}
 
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 30%;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:not(:last-child):after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.row{
+  padding-top: 20px;
+}
+/* The expanding image container */
+.container {
+  position: relative;
+
+}
+.greet a{
+  color: white;
+}
+ .greet{
+  background-image: url("images/east-college.jpg");
+  min-height: 480px;
+  margin:auto;
+  width: 100%;
+  background-size: 100% 100%;
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.txt{
+  font-size: 25px;
+  padding: 120px 0;
+  width: 70%;
+  margin: auto;
+  display: block;
+}
+#expandedImg{
+  width: 70%;
+  display:block;
+  margin:auto;
+}
+/* Expanding image text */
+#imgtext {
+  color: #747474;
+  padding-bottom: 5px;
+  font-size: 20px;
+  display:block;
+  margin:auto;
+  text-align: center;
+}
+article{
+  margin-bottom: 20px;
 }

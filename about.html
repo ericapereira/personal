@@ -2,6 +2,7 @@
 <html>
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Amiko|Arima+Madurai|Farsan|Lalezar|Mogra|Rakkas|Rasa|Shrikhand|Suez+One|Yatra+One" rel="stylesheet">
 
 <body>
 
@@ -24,20 +25,16 @@
 
 
   <main>
-    <article>
-      <section>
-
-    			<div class="intro1">
-
-    				<h2>Nice to meet you!</h2>
+    <article class="greet">
+      <div class="txt">
+      <h2>ABOUT ME</h2>
     			My name is Erica Pereira and I'm currently an undergrad at DePauw University.
-    			I am working on my Bachelors of Arts in Computer Science and I am expected to graduate May 2020.
+    			I'm working on my Bachelors of Arts in Computer Science and I'm expected to graduate May 2020.
     			If you would like to know more about my professional experience navigate to my <a href="exp.html">experience</a> page!
-
-    			<br>
-    			<br>
-    		</div>
-        <h2> Now, let's get personal</h2>
+</div>
+      </article>
+      <article>
+        <h2> Now, let's get personal!</h2>
         <div class="from">
         <header>Where I'm From: </header>
 
@@ -45,24 +42,31 @@
             I'm a Mexican-American first generation.
             I grew up in Chicago in a predominatnly Latinx neighborhood in the west side of the city.
             La Villita is a vibrant community that translates to "small village".
-            This is the place I have called home! <br> I attended high school in the north side of Chicago. Proud Lane Tech alumn - Class of 2016,
+            This is the place I call home! I'm a native Spanish speaker and grew up with a strong Mexican culture integrated in my life. <br> I attended high school in the north side of Chicago. Proud Lane Tech alumn - Class of 2016.
             <br>
-            <div class="three">
-            <div class="neighborhood">
-              <img src="images/villita.jpg" alt="picture of neighbohood" >
-              <p id="help2"> "Bienvenidos a La Villita", Chicago, IL </p>
-            </div>
-            <div class="ne">
-              <img src="images/villita.jpg" alt="picture of neighbohood" >
-              <p id="help2"> "Bienvenidos a La Villita", Chicago, IL </p>
-            </div>
-            <div class="ne">
-              <img src="images/villita.jpg" alt="picture of neighbohood" >
-              <p id="help2"> "Bienvenidos a La Villita", Chicago, IL </p>
-            </div>
-            </div>
+          </article>
+            <!-- The four columns -->
+            <article>
+<div class="row">
+<div class="column">
+<img src="images/villita.jpg" alt="La Villita, Chicago" class="neighborhood" style="width:80%" onclick="myFunction(this);">
+</div>
+<div class="column">
+<img src="images/mural.jpg" alt="Mural in Pilsen, Chicago" style="width:80%" onclick="myFunction(this);">
+</div>
+<div class="column">
+<img src="images/parade.jpg" alt="Mexico's Independence Day Parade in Chicago" style="width:80%" onclick="myFunction(this);">
+</div>
+</div>
 
-        </div>
+<div class="container">
+  <div id="imgtext">La Villita, Chicago</div>
+<img id="expandedImg" src="images/villita.jpg" alt="La Villita, Chicago" >
+</div>
+
+</div>
+</article>
+<article>
     		<h2>How it all started</h2>
     		Allow me to set the setting, it is 2012 and tumblr is what everyone my age is using.
     		Tumblr became a hub on the internet where teenagers like me found comfort.
@@ -73,8 +77,8 @@
     		I was messing with the HTML and CSS for my blog. I was fascinated by the way the computer followed my input.
     		I started to google what the syntax meant, and taught myself the basics of HTML and CSS.
     		This was my first exposure to Computer Science!
-    		<br>
-    		<br>
+      </article>
+      <article>
     		<h2>And it continues... </h2>
     		I remember the exact moment in high school when I became aware that girls like me, did not code.
     		As I left my first programming class, with my tote and heeled boots, I observed the line of white teenage boys that I shadowed out the door.
@@ -82,22 +86,27 @@
     		My career objectives greatly reflect upon the values I hold high in my life.
     		These values are equality, learning and innovation.
     		Diversity and inclusion are now conversations that we are starting have in STEM disciplines.
-    		I
-    	<br>
-     	<br>
+      </article>
+      <article>
     	<h2>In the future</h2>
     	I want to give back to my community. And I also will continue to
     	encourage ad promote divesity and inclusion in STEM where ever I go.
 
     	<br>
     	<br>
-    </div>
-    </section>
+    </article>
+
   </main>
   </body>
-  <footer>
-    Last updated: Jan. 2019
-    <br>
-    Site Status: INCOMPLETE
-  </footer>
+
+  <script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+
+  expandImg.parentElement.style.display = "block";
+}
+</script>
 </html>
