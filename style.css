@@ -19,7 +19,7 @@ html {
 
 
 article{
-  width: 70%;
+  width: 65%;
   margin: auto;
 }
 .hide{
@@ -359,6 +359,9 @@ ul .bfs img{
   margin: auto;
 }
 /*Attribute selector.. if type is fav change color and style*/
+a[type="ital"]{
+  font-style: oblique;
+}
 li[type="fav"]{
   color: #FFCCE4;
   font-style: italic;
