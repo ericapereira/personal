@@ -5,8 +5,12 @@ body{
   margin-right: 0px;
   margin-bottom: auto;
   background-color: white;
-  font-family: 'ABeeZee', sans-serif;
   font-size: 18px;
+
+  font-family: 'PT Serif', serif;
+
+
+
 text-decoration: none;}
 
 a{
@@ -17,10 +21,10 @@ html {
     height: 100%;
 }
 
-
 article{
   width: 65%;
   margin: auto;
+
 }
 .hide{
   padding: 0px 0px 20px 20px;
@@ -73,10 +77,11 @@ header a{
 
 .nav {
   background-color: #f6d9d5;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight:bolder;
   margin: 0 0 0px;
   text-align: center;
-  font-family: 'ABeeZee', sans-serif;
+  font-family: 'Josefin Slab', serif;
 }
 .nav li:not(:nth-child(3)){
   transform: translateY(-50px);
@@ -98,6 +103,9 @@ header a{
   padding-left: 10px;
   padding-right: 10px;
   text-decoration: none;
+}
+ul{
+  padding-left: 0px;
 }
 .nav li:not(:nth-child(3)) a:hover {
   background: 	#f9fafc;
@@ -244,10 +252,12 @@ h2:hover{
   font-size: 60px;
   font-weight: bold;
   padding-top: 50px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   text-align: center;
   transition: transform .6s;
   cursor: pointer;
+  font-family: 'Josefin Slab', serif;
+
 
 }
 .intro:hover{
@@ -458,7 +468,7 @@ section .contact{
 
 /* The grid: Four equal columns that floats next to each other */
 .column {
-  float: left;
+  float: right;
   width: 30%;
 }
 
@@ -489,6 +499,10 @@ section .contact{
 .greet a{
   color: white;
 }
+.greet h2{
+  font-family: 'Josefin Slab', serif;
+
+}
  .greet{
   background-image: url("images/east-college.jpg");
   min-height: 480px;
@@ -498,6 +512,7 @@ section .contact{
   color: white;
   text-align: center;
   margin-bottom: 40px;
+
 }
 .txt{
   font-size: 25px;
@@ -505,6 +520,7 @@ section .contact{
   width: 70%;
   margin: auto;
   display: block;
+
 }
 #expandedImg{
   width: 70%;
@@ -513,13 +529,51 @@ section .contact{
 }
 /* Expanding image text */
 #imgtext {
+  padding-top: 20px;
   color: #747474;
-  padding-bottom: 5px;
+  padding-bottom: 2px;
   font-size: 20px;
   display:block;
   margin:auto;
   text-align: center;
 }
+section{
+  display: block;
+
+}
 article{
   margin-bottom: 20px;
+  display: block;
+}
+.div1{
+
+  width: 40%;
+  display: block;
+  float: left;
+
+}
+.div2{
+  width: 40%;
+  display: block;
+  float: right;
+
+}
+#con {
+  width: 100%;
+  float: left;
+}
+#nyc {
+  width: 100%;
+  float: left;
+  margin-right: 10%;
+
+}
+.end{
+  width: 100%;
+}
+
+article #women{
+  width: 100%;
+
+  height: auto;
 }
