@@ -4,11 +4,9 @@ body{
   margin-left: 0px;
   margin-right: 0px;
   margin-bottom: auto;
-  background-color: #f4f4f4;
-  font-size: 16px;
-
+  background-color: white;
+  font-size: 18px;
   font-family: 'PT Serif', serif;
-
   text-decoration: none;}
 
   a{
@@ -20,12 +18,12 @@ body{
   }
 
   article{
-    width: 63%;
+    width: 65%;
     margin: auto;
     background-color: white;
     display: block;
-    padding: 20px 50px 0px 50px;
-  }
+    margin-top: 20px;
+    }
   .hide{
     padding: 0px 0px 20px 20px;
     margin-bottom: 20px;
@@ -71,11 +69,19 @@ body{
     height: 30px;
   }
   header a{
-
+    font-family: 'Josefin Slab', serif;
     font-size: 45px;
   }
-
+  header[type="co"]{
+    color: #5e5e5e;
+    font-size: 19px;
+    font-weight: bolder;
+  }
+  div[type="date"]{
+    float: right;
+  }
   .nav {
+    width: 100%;
     background-color: #f6d9d5;
     font-size: 18px;
     font-weight:bolder;
@@ -88,10 +94,15 @@ body{
     padding-left: 30px;
     padding-right: 30px;
   }
+  .nav li:first-child{
+    padding-right: 30px;
+    padding-left:0px;
+  }
+
   .nav li {
     display: inline-block;
     list-style-type: none;
-    margin-right: 10px;
+
   }
   .nav li:last-child {
     margin-right: 0;
@@ -100,8 +111,6 @@ body{
     color: black;
     display: inline-block;
     font-weight: bold;
-    padding-left: 10px;
-    padding-right: 10px;
     text-decoration: none;
   }
   ul{
@@ -184,7 +193,7 @@ body{
     height: auto;
   }
   footer{
-    font-family: 'ABeeZee', sans-serif;
+    font-family: 'PT Serif', serif;
     font-size: 12px;
     left: 0;
     bottom: 0;
@@ -192,7 +201,8 @@ body{
     background-color: #f9fafc;
     color: black;
     width: 100%;
-
+    position: fixed;
+    opacity: .7;
   }
   .content{
     display: block;
@@ -200,27 +210,10 @@ body{
     width: 55%;
 
   }
-
-
-
-  aside{
-    float: right;
-    background-color: white;
-    height: 100%;
-    width: 33%;
-    text-align: center;
-    overflow: hidden;
-    padding: 15px;
-    min-width: 310px;
-    margin-bottom: 60px;
-  }
-  .insta{
-    padding: 10px;
-  }
   header{
     font-size: 19px;
     font-weight: bolder;
-
+font-family: 'Josefin Slab', serif;
   }
   .top{
     width: 100%;
@@ -246,13 +239,14 @@ body{
     text-align: center;
     transition: transform .6s;
     cursor: pointer;
+    font-family: 'Josefin Slab', serif;
 
   }
   h2:hover{
     transform: scale(1.3);
   }
   .intro{
-    font-size: 60px;
+    font-size: 50px;
     font-weight: bold;
     padding-top: 50px;
     padding-bottom: 40px;
@@ -266,6 +260,7 @@ body{
   .intro:hover{
     transform:scale(1.3);
   }
+
   main{
     background-color: white;
     height: 100%;
@@ -278,19 +273,11 @@ body{
   .about a{
     text-decoration: none;
   }
-
-  .exp{
-    width: 100%;
-    min-height: 200px;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
+  .aboutpage{
     background-color: white;
-    padding: 20px;
-    font-size: 18px;
-
-
   }
+
+
   #help{
     float: none;
   }
@@ -385,23 +372,7 @@ body{
   /*Attribute selector.. if type is CS or London change font color*/
 
   /*STRUCTURAL SELECTORS BELOW
-  article:last-of-type{
-  color: navy;
-}
-article:not(:last-of-type){
-background-color: #212D4F;
-}
-.alg ul li:first-child{
-list-style: none;
-}
-article ul li:not(:first-child){
-padding: 10px;
-font-weight: bold;
-}
-article a{
-text-decoration: none;
-color: white;
-}
+
 */
 .ldn img{
   display: block;
@@ -437,32 +408,46 @@ article .films{
 #ld::after{
   content: "\2605";
 }
-/*TWITTER*/
-aside .twitter-timeline{
-  float: right;
-  width: 30%;
-  overflow: scroll;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 section .contact{
   float: left;
   width: 50%;
 }
 
-.resume{
-  /*GRADIENT*/
-  background-image: linear-gradient(#FFCCE4, #E0E8FC);
-  margin-top: 50px;
-  margin-bottom: 50px;
+#butt{
+  margin: auto;
+  margin-bottom: 40px;
+  margin-top: 40px;
   width: 100%;
+}
+.button{
+  border: 2px solid ##969696;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Josefin Slab', serif;
+  background-color: #f7d0cb;
+}
+.resume{
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
   background-color: white;
-  padding: 20px;
-  font-size: 18px;
+  font-size: 17px;
+  color: #6d445f;
+  height: 100%;
 }
-
+.resume li{
+  list-style: none;
+}
+.resume h2{
+  color: black;
+}
 /* The grid: Four equal columns that floats next to each other */
 .column {
   float: right;
@@ -498,7 +483,7 @@ section .contact{
 }
 .greet h2{
   font-family: 'Josefin Slab', serif;
-  font-size: 35px;
+  font-size: 40px;
   font-weight: bolder;
 }
 .greet{
@@ -510,13 +495,49 @@ section .contact{
   color: white;
   text-align: center;
 }
+section[type="exp"]{
+  width: 85%;
+  min-height: 550px;
+  margin: auto;
+}
+
+.exp{
+  font-family: 'Josefin Slab', serif;
+  text-align: center;
+  color: black;
+  float: left;
+  padding-top: 40px;
+  width: 35%;
+  font-size: 40px;
+  padding-left: 6%;
+  font-weight: bolder;
+}
+.exp #desc{
+  text-align: justify;
+  font-size: 17px;
+  font-family: 'PT Serif', serif;
+  font-weight: normal;
+  padding-top: 10px;
+
+}
+.reupic{
+  padding-top: 50px;
+  float: right;
+  width: 50%;
+  margin-right: 7%;
+}
+.reupic img{
+
+  width: 100%;
+}
+
 .txt{
   font-size: 20px;
   padding: 100px 0;
   width: 70%;
   margin: auto;
   display: block;
-  font-style: normal;
+  font-weight: normal;
 }
 #expandedImg{
   width: 70%;
@@ -532,6 +553,10 @@ section .contact{
   display:block;
   margin:auto;
   text-align: center;
+  font-family: 'Josefin Slab', serif;
+  text-transform: uppercase;
+}
+.second{
 }
 section{
   display: block;
@@ -554,21 +579,27 @@ section{
 .con{
   width: 50%;
   float: left;
+  min-height: 300px;
 }
 .nyc{
   width: 50%;
   float: right;
 }
 .nyc img{
-  width: 100%;
+  width: 90%;
+  margin-bottom: 60px;
 }
 .con img{
-  width: 100%;
+  width: 90%;
+  margin-bottom: 20px;
 }
 #caption{
   padding: 0px 10px 0px 10px;
   text-align: center;
   font-size: 14px;
+  font-family: 'Josefin Slab', serif;
+  text-transform: uppercase;
+
 }
 .end{
   width: 100%;
