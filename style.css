@@ -18,13 +18,12 @@ body{
   }
 
   article{
-    width: 70%;
-
+    width: 75%;
     background-color: white;
     display: block;
     margin-top: 20px;
     display: inline-block;
-    margin-left: 15%;
+    margin-left: 12.5%;
     }
   .hide{
     padding: 0px 0px 20px 20px;
@@ -250,51 +249,18 @@ font-family: 'Josefin Slab', serif;
     padding: 20px;
     font-size: 18px;
   }
-  section .links{
-    float: left;
-    width: 50%;
-    margin: auto;
-    margin-bottom: 25px;
-    background-color: white;
-    padding: 20px;
-    font-size: 18px;
-    /* BORDER */
-    border:2px dashed black;
+  .l h2{
+    padding-top: 20px;
   }
-  .links ul{
-    padding-right: 30px;
-  }
-  .links li{
-    list-style-type: none;
-  }
-  /*STRUCTURAL SELECTORS BELOW*/
-  .links li:first-child{
-    padding: 10px;
-    background-color: lightgrey;
-  }
-  .links li:first-child img{
-    padding-left: 10px;
-    max-width: 50px;
-    max-height: 100%;
-  }
-  .links li:nth-child(2){
-    padding: 10px;
-    background-color: white;
-  }
-  .links li:nth-child(2) img{
-    padding-left: 10px;
-    max-width: 50px;
-    max-height: 100%;
-  }
-  .links li:last-child{
-    padding: 10px;
-    background-color: lightgrey;
+  section[type="insta"]{
+    padding-top: 20px;
+    margin-left: 30%;
+
   }
   /* Pseudo element#1 */
   address:before {
     content: "\2709";
   }
-
 
   ul .dijkstras img{
     max-width:500px;
@@ -315,9 +281,9 @@ font-family: 'Josefin Slab', serif;
     margin: auto;
   }
   section {
-    display: block;
-    width: 70%;
-    margin: auto;
+    display: inline-block;
+    width: 75%;
+    margin-left: 12.5%;
   }
   section li{
     list-style: none;
@@ -329,9 +295,17 @@ font-family: 'Josefin Slab', serif;
   a[type="ital"]{
     font-style: oblique;
   }
+  ul[type="contact"]{
+    display: flex;
+  }
   li[type="fav"]{
     color: #FFCCE4;
     font-style: italic;
+  }
+
+  li[type="contact"] img{
+    width: 100px;
+    padding-right: 30%;
   }
   #pink{
     color: #FFCCE4;
@@ -372,8 +346,8 @@ font-family: 'Josefin Slab', serif;
   background-color: #f7d0cb;
 }
 .resume{
-  width: 70%;
-  margin-left: 15%;
+  width: 75%;
+  margin-left: 12.5%;
   display: inline-block;
   background-color: white;
   font-size: 17px;
@@ -386,6 +360,7 @@ font-family: 'Josefin Slab', serif;
 .resume h2{
   color: black;
 }
+
 /* The grid: Four equal columns that floats next to each other */
 .column {
   float: right;
@@ -435,7 +410,6 @@ font-family: 'Josefin Slab', serif;
 }
 section[type="exp"]{
   display: inline-block;
-  margin: auto;
 }
 
 .exp{
@@ -444,9 +418,8 @@ section[type="exp"]{
   color: black;
   float: left;
   padding-top: 40px;
-  width: 35%;
+  width: 45%;
   font-size: 40px;
-  padding-left: 6%;
   font-weight: bolder;
 }
 .exp #desc{
@@ -457,11 +430,13 @@ section[type="exp"]{
   padding-top: 10px;
 
 }
+.exp h2{
+  font-size: 40px;
+}
 .reupic{
-  padding-top: 50px;
+  padding-top: 16%;
   float: right;
   width: 50%;
-  margin-right: 7%;
 }
 .reupic img{
 
@@ -496,7 +471,7 @@ section[type="exp"]{
 
 section{
   display: inline-block;
-  margin: auto;
+
 }
 
 .div1{
@@ -521,11 +496,11 @@ section{
 }
 .nyc img{
   width: 90%;
-  margin-bottom: 60px;
+
 }
 .con img{
   width: 90%;
-  margin-bottom: 20px;
+
 }
 #caption{
   padding: 0px 10px 0px 10px;
