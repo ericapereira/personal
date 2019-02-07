@@ -103,7 +103,6 @@ body{
   .nav li {
     display: inline-block;
     list-style-type: none;
-
   }
   .nav li:last-child {
     margin-right: 0;
@@ -236,8 +235,6 @@ font-family: 'Josefin Slab', serif;
   .aboutpage{
     background-color: white;
   }
-
-
   #help{
     float: none;
   }
@@ -518,4 +515,14 @@ section{
   width: 100%;
   display: block;
   height: auto;
+}
+
+@media only screen and (max-width: 800px) {
+  .nav li {
+    display: none;
+    list-style-type: none;
+  }
+  .nav li:nth-child(3){
+
+  }
 }
